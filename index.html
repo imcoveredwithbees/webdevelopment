@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Haven Bookstore - Your neighborhood destination for literary treasures. Discover curated collections, rare finds, and community events.">
+    <meta name="keywords" content="bookstore, books, reading, literature, fiction, non-fiction">
+    <meta name="author" content="Book Haven Bookstore">
+    
+    <title>Book Haven Bookstore | Home</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Book Haven Home">
+                <div class="logo-icon" aria-hidden="true">📚</div>
+                <span class="logo-text">Book <span>Haven</span></span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="discounts.html">Discounts</a></li>
+                    <li>
+                        <a href="#" class="cart-btn" data-action="view-cart" aria-label="View shopping cart">
+                            🛒 Cart <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Book Haven</h1>
+                <p class="hero-tagline">"A room without books is like a body without a soul." — Cicero</p>
+                <a href="gallery.html" class="hero-cta">Explore Our Collection</a>
+            </div>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section class="featured-books" aria-labelledby="featured-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="featured-heading">Featured Books</h2>
+                    <p>Hand-picked selections from our literary experts</p>
+                    <div class="section-divider" aria-hidden="true"></div>
+                </header>
+
+                <div class="books-grid">
+                    <!-- Book 1 -->
+                    <article class="book-card" data-id="book-1">
+                        <img src="images/book-1.jpg" alt="The Midnight Library book cover" class="book-image" loading="lazy">
+                        <div class="book-info">
+                            <h3 class="book-title">The Midnight Library</h3>
+                            <p class="book-author">by Matt Haig</p>
+                            <p class="book-price">$16.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add The Midnight Library to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 2 -->
+                    <article class="book-card" data-id="book-2">
+                        <img src="images/book-2.jpg" alt="Atomic Habits book cover" class="book-image" loading="lazy">
+                        <div class="book-info">
+                            <h3 class="book-title">Atomic Habits</h3>
+                            <p class="book-author">by James Clear</p>
+                            <p class="book-price">$18.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Atomic Habits to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 3 -->
+                    <article class="book-card" data-id="book-3">
+                        <img src="images/book-3.jpg" alt="Where the Crawdads Sing book cover" class="book-image" loading="lazy">
+                        <div class="book-info">
+                            <h3 class="book-title">Where the Crawdads Sing</h3>
+                            <p class="book-author">by Delia Owens</p>
+                            <p class="book-price">$14.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Where the Crawdads Sing to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 4 -->
+                    <article class="book-card" data-id="book-4">
+                        <img src="images/book-4.jpg" alt="Project Hail Mary book cover" class="book-image" loading="lazy">
+                        <div class="book-info">
+                            <h3 class="book-title">Project Hail Mary</h3>
+                            <p class="book-author">by Andy Weir</p>
+                            <p class="book-price">$19.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Project Hail Mary to cart">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="values-section" aria-labelledby="why-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="why-heading">Why Choose Book Haven?</h2>
+                    <p>More than a bookstore — a community for book lovers</p>
+                    <div class="section-divider" aria-hidden="true"></div>
+                </header>
+
+                <div class="values-grid">
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">📖</div>
+                        <h3>Curated Selection</h3>
+                        <p>Every book in our collection is hand-picked by our team of passionate readers and literary experts.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🎁</div>
+                        <h3>Gift Wrapping</h3>
+                        <p>Complimentary gift wrapping for all purchases. Perfect for birthdays, holidays, and special occasions.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">👥</div>
+                        <h3>Book Clubs</h3>
+                        <p>Join our weekly book club meetings and connect with fellow readers in your community.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🚚</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Free local delivery for orders over $25. Get your books delivered right to your doorstep.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section class="subscribe-section" aria-labelledby="subscribe-heading">
+            <div class="container">
+                <h2 id="subscribe-heading">Stay Updated</h2>
+                <p>Subscribe to our newsletter for new arrivals, author events, and exclusive discounts.</p>
+                
+                <form class="subscribe-form" aria-label="Newsletter subscription">
+                    <label for="subscribe-email" class="visually-hidden">Email address</label>
+                    <input 
+                        type="email" 
+                        id="subscribe-email" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required
+                        aria-describedby="subscribe-hint"
+                    >
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <p id="subscribe-hint" class="subscribe-message" style="display: none;"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" role="dialog" aria-labelledby="cart-title" aria-modal="true">
+        <div class="cart-container">
+            <header class="cart-header">
+                <h2 id="cart-title">Your Cart</h2>
+                <button class="cart-close" onclick="closeCartModal()" aria-label="Close cart">&times;</button>
+            </header>
+            
+            <div class="cart-items">
+                <!-- Cart items will be rendered here via JavaScript -->
+            </div>
+            
+            <footer class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+                    <button class="btn btn-primary" onclick="processOrder()">Process Order</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Book Haven</h4>
+                    <p>Your neighborhood destination for literary treasures since 2010. Discover, explore, and get lost in the world of books.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Book Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="discounts.html">Discounts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Reading Lane</li>
+                        <li>Bookville, BK 12345</li>
+                        <li>contact@bookhaven.com</li>
+                        <li>(555) 123-BOOK</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" aria-label="Instagram">i</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">p</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    
+    <!-- Visually Hidden Style for Screen Readers -->
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</body>
+</html>

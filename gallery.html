@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our complete collection of books at Book Haven Bookstore. Fiction, non-fiction, classics, and more.">
+    <meta name="keywords" content="bookstore, books, fiction, non-fiction, classics, mystery, romance">
+    <meta name="author" content="Book Haven Bookstore">
+    
+    <title>Book Gallery | Book Haven Bookstore</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Book Haven Home">
+                <div class="logo-icon" aria-hidden="true">📚</div>
+                <span class="logo-text">Book <span>Haven</span></span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="discounts.html">Discounts</a></li>
+                    <li>
+                        <a href="#" class="cart-btn" data-action="view-cart" aria-label="View shopping cart">
+                            🛒 Cart <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="hero" style="padding: 3rem 1.5rem;">
+            <div class="hero-content">
+                <h1>Book Gallery</h1>
+                <p class="hero-tagline">Explore our carefully curated collection of literary treasures</p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" aria-labelledby="gallery-heading">
+            <div class="container">
+                <!-- Filter Buttons -->
+                <div class="gallery-filters" role="group" aria-label="Filter books by category">
+                    <button class="filter-btn active" data-category="all">All Books</button>
+                    <button class="filter-btn" data-category="fiction">Fiction</button>
+                    <button class="filter-btn" data-category="non-fiction">Non-Fiction</button>
+                    <button class="filter-btn" data-category="mystery">Mystery</button>
+                    <button class="filter-btn" data-category="romance">Romance</button>
+                    <button class="filter-btn" data-category="sci-fi">Sci-Fi</button>
+                </div>
+
+                <h2 id="gallery-heading" class="visually-hidden">Book Collection</h2>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Book 1 - Fiction -->
+                    <article class="gallery-item" data-id="gallery-1" data-category="fiction">
+                        <img src="images/book-1.jpg" alt="The Midnight Library book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Fiction</span>
+                            <h3 class="gallery-item-title">The Midnight Library</h3>
+                            <p class="gallery-item-author">by Matt Haig</p>
+                            <p class="gallery-item-price">$16.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add The Midnight Library to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 2 - Non-Fiction -->
+                    <article class="gallery-item" data-id="gallery-2" data-category="non-fiction">
+                        <img src="images/book-2.jpg" alt="Atomic Habits book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Non-Fiction</span>
+                            <h3 class="gallery-item-title">Atomic Habits</h3>
+                            <p class="gallery-item-author">by James Clear</p>
+                            <p class="gallery-item-price">$18.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Atomic Habits to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 3 - Mystery -->
+                    <article class="gallery-item" data-id="gallery-3" data-category="mystery">
+                        <img src="images/book-3.jpg" alt="Where the Crawdads Sing book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Mystery</span>
+                            <h3 class="gallery-item-title">Where the Crawdads Sing</h3>
+                            <p class="gallery-item-author">by Delia Owens</p>
+                            <p class="gallery-item-price">$14.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Where the Crawdads Sing to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 4 - Sci-Fi -->
+                    <article class="gallery-item" data-id="gallery-4" data-category="sci-fi">
+                        <img src="images/book-4.jpg" alt="Project Hail Mary book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Sci-Fi</span>
+                            <h3 class="gallery-item-title">Project Hail Mary</h3>
+                            <p class="gallery-item-author">by Andy Weir</p>
+                            <p class="gallery-item-price">$19.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Project Hail Mary to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 5 - Romance -->
+                    <article class="gallery-item" data-id="gallery-5" data-category="romance">
+                        <img src="images/book-5.jpg" alt="The Love Hypothesis book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Romance</span>
+                            <h3 class="gallery-item-title">The Love Hypothesis</h3>
+                            <p class="gallery-item-author">by Ali Hazelwood</p>
+                            <p class="gallery-item-price">$15.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add The Love Hypothesis to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 6 - Fiction -->
+                    <article class="gallery-item" data-id="gallery-6" data-category="fiction">
+                        <img src="images/book-6.jpg" alt="The Kite Runner book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Fiction</span>
+                            <h3 class="gallery-item-title">The Kite Runner</h3>
+                            <p class="gallery-item-author">by Khaled Hosseini</p>
+                            <p class="gallery-item-price">$13.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add The Kite Runner to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 7 - Non-Fiction -->
+                    <article class="gallery-item" data-id="gallery-7" data-category="non-fiction">
+                        <img src="images/book-7.jpg" alt="Educated book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Non-Fiction</span>
+                            <h3 class="gallery-item-title">Educated</h3>
+                            <p class="gallery-item-author">by Tara Westover</p>
+                            <p class="gallery-item-price">$17.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Educated to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 8 - Mystery -->
+                    <article class="gallery-item" data-id="gallery-8" data-category="mystery">
+                        <img src="images/book-8.jpg" alt="Gone Girl book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Mystery</span>
+                            <h3 class="gallery-item-title">Gone Girl</h3>
+                            <p class="gallery-item-author">by Gillian Flynn</p>
+                            <p class="gallery-item-price">$14.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Gone Girl to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 9 - Sci-Fi -->
+                    <article class="gallery-item" data-id="gallery-9" data-category="sci-fi">
+                        <img src="images/book-9.jpg" alt="Dune book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Sci-Fi</span>
+                            <h3 class="gallery-item-title">Dune</h3>
+                            <p class="gallery-item-author">by Frank Herbert</p>
+                            <p class="gallery-item-price">$18.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Dune to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 10 - Romance -->
+                    <article class="gallery-item" data-id="gallery-10" data-category="romance">
+                        <img src="images/book-10.jpg" alt="Pride and Prejudice book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Romance</span>
+                            <h3 class="gallery-item-title">Pride and Prejudice</h3>
+                            <p class="gallery-item-author">by Jane Austen</p>
+                            <p class="gallery-item-price">$12.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Pride and Prejudice to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 11 - Fiction -->
+                    <article class="gallery-item" data-id="gallery-11" data-category="fiction">
+                        <img src="images/book-11.jpg" alt="1984 book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Fiction</span>
+                            <h3 class="gallery-item-title">1984</h3>
+                            <p class="gallery-item-author">by George Orwell</p>
+                            <p class="gallery-item-price">$11.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add 1984 to cart">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Book 12 - Non-Fiction -->
+                    <article class="gallery-item" data-id="gallery-12" data-category="non-fiction">
+                        <img src="images/book-12.jpg" alt="Sapiens book cover" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="gallery-item-category">Non-Fiction</span>
+                            <h3 class="gallery-item-title">Sapiens</h3>
+                            <p class="gallery-item-author">by Yuval Noah Harari</p>
+                            <p class="gallery-item-price">$22.99</p>
+                            <button class="btn btn-add-cart" aria-label="Add Sapiens to cart">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" role="dialog" aria-labelledby="cart-title" aria-modal="true">
+        <div class="cart-container">
+            <header class="cart-header">
+                <h2 id="cart-title">Your Cart</h2>
+                <button class="cart-close" onclick="closeCartModal()" aria-label="Close cart">&times;</button>
+            </header>
+            
+            <div class="cart-items">
+                <!-- Cart items will be rendered here via JavaScript -->
+            </div>
+            
+            <footer class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+                    <button class="btn btn-primary" onclick="processOrder()">Process Order</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Book Haven</h4>
+                    <p>Your neighborhood destination for literary treasures since 2010. Discover, explore, and get lost in the world of books.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Book Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="discounts.html">Discounts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Reading Lane</li>
+                        <li>Bookville, BK 12345</li>
+                        <li>contact@bookhaven.com</li>
+                        <li>(555) 123-BOOK</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" aria-label="Instagram">i</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">p</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    
+    <!-- Visually Hidden Style for Screen Readers -->
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</body>
+</html>

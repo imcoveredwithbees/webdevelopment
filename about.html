@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Book Haven Bookstore - our story, our team, and our mission to connect readers with great books.">
+    <meta name="keywords" content="bookstore, about us, book lovers, community, reading">
+    <meta name="author" content="Book Haven Bookstore">
+    
+    <title>About Us | Book Haven Bookstore</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Book Haven Home">
+                <div class="logo-icon" aria-hidden="true">📚</div>
+                <span class="logo-text">Book <span>Haven</span></span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="discounts.html">Discounts</a></li>
+                    <li>
+                        <a href="#" class="cart-btn" data-action="view-cart" aria-label="View shopping cart">
+                            🛒 Cart <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Hero -->
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Book Haven</h1>
+                <p class="hero-tagline">More than a bookstore — a home for book lovers since 2010</p>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="about-content" aria-labelledby="story-heading">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="images/store-interior.jpg" alt="Inside Book Haven Bookstore - cozy reading nooks and shelves filled with books" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h2 id="story-heading">Our Story</h2>
+                        <p>Book Haven began in 2010 as a small corner shop with a big dream: to create a sanctuary where book lovers could discover their next favorite read. Founded by avid readers Sarah Mitchell and James Chen, our store has grown from a modest collection of 500 books to over 15,000 titles spanning every genre imaginable.</p>
+                        <p>What started as a passion project has blossomed into a beloved community hub. We host weekly book clubs, author readings, and children's story hours. Our shelves are curated with care, featuring everything from bestsellers to hidden gems waiting to be discovered.</p>
+                        <p>Today, Book Haven remains true to its original mission: to connect readers with books that will change their lives, one page at a time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section class="values-section" aria-labelledby="values-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="values-heading">Our Values</h2>
+                    <p>The principles that guide everything we do</p>
+                    <div class="section-divider" aria-hidden="true"></div>
+                </header>
+
+                <div class="values-grid">
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">❤️</div>
+                        <h3>Passion for Reading</h3>
+                        <p>Every member of our team is a devoted reader. We don't just sell books — we live and breathe them.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🤝</div>
+                        <h3>Community First</h3>
+                        <p>We believe bookstores are community anchors. We host events, support local authors, and give back to our neighborhood.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🌱</div>
+                        <h3>Sustainability</h3>
+                        <p>We use eco-friendly packaging, partner with sustainable publishers, and offer a book recycling program.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">✨</div>
+                        <h3>Inclusive Curation</h3>
+                        <p>Our shelves reflect diverse voices and perspectives. Everyone deserves to see themselves in the stories they read.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Team -->
+        <section class="team-section" aria-labelledby="team-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="team-heading">Meet Our Team</h2>
+                    <p>The passionate book lovers behind Book Haven</p>
+                    <div class="section-divider" aria-hidden="true"></div>
+                </header>
+
+                <div class="team-grid">
+                    <article class="team-card">
+                        <img src="images/team-1.jpg" alt="Sarah Mitchell, Co-Founder" loading="lazy">
+                        <div class="team-info">
+                            <h3>Sarah Mitchell</h3>
+                            <p class="team-role">Co-Founder & Curator</p>
+                            <p class="team-bio">Sarah's love for literature began at age 5 when she read her first chapter book. She specializes in literary fiction and poetry.</p>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="images/team-2.jpg" alt="James Chen, Co-Founder" loading="lazy">
+                        <div class="team-info">
+                            <h3>James Chen</h3>
+                            <p class="team-role">Co-Founder & Events Director</p>
+                            <p class="team-bio">James brings authors and readers together through our events program. His expertise lies in mystery and thriller genres.</p>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="images/team-3.jpg" alt="Maria Rodriguez, Store Manager" loading="lazy">
+                        <div class="team-info">
+                            <h3>Maria Rodriguez</h3>
+                            <p class="team-role">Store Manager</p>
+                            <p class="team-bio">Maria ensures every customer leaves with a smile and a great book. She's our go-to expert for romance and young adult fiction.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 id="contact-heading">Get In Touch</h2>
+                        <p>Have questions about our store, want to host an event, or just want to chat about books? We'd love to hear from you!</p>
+                        
+                        <ul class="contact-details">
+                            <li>
+                                <span class="icon" aria-hidden="true">📍</span>
+                                <span>123 Reading Lane, Bookville, BK 12345</span>
+                            </li>
+                            <li>
+                                <span class="icon" aria-hidden="true">📧</span>
+                                <span>contact@bookhaven.com</span>
+                            </li>
+                            <li>
+                                <span class="icon" aria-hidden="true">📞</span>
+                                <span>(555) 123-BOOK (2665)</span>
+                            </li>
+                            <li>
+                                <span class="icon" aria-hidden="true">🕐</span>
+                                <span>Mon-Sat: 9am-8pm | Sun: 10am-6pm</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" aria-label="Contact form">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name <span aria-hidden="true">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="contact-name" 
+                                    name="name" 
+                                    required 
+                                    minlength="2"
+                                    placeholder="Enter your full name"
+                                    aria-required="true"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Email Address <span aria-hidden="true">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="contact-email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="Enter your email"
+                                    aria-required="true"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Subject <span aria-hidden="true">*</span></label>
+                                <select id="contact-subject" name="subject" required aria-required="true">
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="order">Order Question</option>
+                                    <option value="event">Event Information</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Your Message <span aria-hidden="true">*</span></label>
+                                <textarea 
+                                    id="contact-message" 
+                                    name="message" 
+                                    required 
+                                    minlength="10"
+                                    placeholder="Type your message here..."
+                                    aria-required="true"
+                                ></textarea>
+                            </div>
+
+                            <div class="form-message" role="alert" aria-live="polite"></div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" role="dialog" aria-labelledby="cart-title" aria-modal="true">
+        <div class="cart-container">
+            <header class="cart-header">
+                <h2 id="cart-title">Your Cart</h2>
+                <button class="cart-close" onclick="closeCartModal()" aria-label="Close cart">&times;</button>
+            </header>
+            
+            <div class="cart-items">
+                <!-- Cart items will be rendered here via JavaScript -->
+            </div>
+            
+            <footer class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+                    <button class="btn btn-primary" onclick="processOrder()">Process Order</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Book Haven</h4>
+                    <p>Your neighborhood destination for literary treasures since 2010. Discover, explore, and get lost in the world of books.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Book Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="discounts.html">Discounts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Reading Lane</li>
+                        <li>Bookville, BK 12345</li>
+                        <li>contact@bookhaven.com</li>
+                        <li>(555) 123-BOOK</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" aria-label="Instagram">i</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">p</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    
+    <!-- Visually Hidden Style for Screen Readers -->
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</body>
+</html>

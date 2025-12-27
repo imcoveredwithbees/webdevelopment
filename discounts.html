@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exclusive discounts and membership rewards at Book Haven Bookstore. Save on your favorite books with our loyalty program.">
+    <meta name="keywords" content="bookstore, discounts, deals, membership, rewards, savings">
+    <meta name="author" content="Book Haven Bookstore">
+    
+    <title>Discounts & Rewards | Book Haven Bookstore</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Book Haven Home">
+                <div class="logo-icon" aria-hidden="true">📚</div>
+                <span class="logo-text">Book <span>Haven</span></span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="discounts.html" class="active">Discounts</a></li>
+                    <li>
+                        <a href="#" class="cart-btn" data-action="view-cart" aria-label="View shopping cart">
+                            🛒 Cart <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Discount Hero -->
+        <section class="discount-hero">
+            <div class="hero-content">
+                <span class="discount-badge">Up to 25% OFF</span>
+                <h1>Exclusive Discounts & Rewards</h1>
+                <p class="discount-subtitle">Join our loyalty program and save on every purchase</p>
+            </div>
+        </section>
+
+        <!-- Discount Calculator -->
+        <section class="discount-calculator" aria-labelledby="calculator-heading">
+            <div class="container">
+                <div class="calculator-card">
+                    <h2 id="calculator-heading">💰 Calculate Your Savings</h2>
+                    <p style="text-align: center; color: var(--color-muted); margin-bottom: 2rem;">
+                        See how much you can save with your membership and bulk purchases
+                    </p>
+                    
+                    <form class="calculator-form" aria-label="Discount calculator">
+                        <div class="form-group">
+                            <label for="original-price">Book Price ($)</label>
+                            <input 
+                                type="number" 
+                                id="original-price" 
+                                name="original-price" 
+                                min="0" 
+                                step="0.01" 
+                                value="19.99"
+                                placeholder="Enter book price"
+                                aria-describedby="price-hint"
+                            >
+                            <small id="price-hint" style="color: var(--color-muted);">Enter the original price of a single book</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input 
+                                type="number" 
+                                id="quantity" 
+                                name="quantity" 
+                                min="1" 
+                                max="100" 
+                                value="1"
+                                placeholder="Number of books"
+                                aria-describedby="quantity-hint"
+                            >
+                            <small id="quantity-hint" style="color: var(--color-muted);">Buy 5+ for 5% off, 10+ for 10% off!</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="membership">Membership Level</label>
+                            <select id="membership" name="membership" aria-describedby="membership-hint">
+                                <option value="0">No Membership</option>
+                                <option value="5">Reader (5% off)</option>
+                                <option value="10">Bookworm (10% off)</option>
+                                <option value="15">Literary Elite (15% off)</option>
+                            </select>
+                            <small id="membership-hint" style="color: var(--color-muted);">Membership discounts stack with bulk discounts!</small>
+                        </div>
+
+                        <div class="calculator-result" aria-live="polite">
+                            <p class="result-label">Your Total Price:</p>
+                            <p class="result-price">$19.99</p>
+                            <p class="result-savings">Add more items or upgrade membership for discounts!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Tiers -->
+        <section class="discount-tiers" aria-labelledby="tiers-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="tiers-heading">Membership Levels</h2>
+                    <p>Choose the plan that fits your reading habits</p>
+                    <div class="section-divider" aria-hidden="true"></div>
+                </header>
+
+                <div class="tiers-grid">
+                    <!-- Tier 1: Reader -->
+                    <article class="tier-card">
+                        <div class="tier-icon" aria-hidden="true">📖</div>
+                        <h3 class="tier-name">Reader</h3>
+                        <p class="tier-discount">5% OFF</p>
+                        <p class="tier-requirement">Free to join</p>
+                        <ul class="tier-benefits">
+                            <li>5% off all purchases</li>
+                            <li>Birthday discount coupon</li>
+                            <li>Early access to sales</li>
+                            <li>Monthly newsletter</li>
+                        </ul>
+                        <button class="btn btn-outline">Join Free</button>
+                    </article>
+
+                    <!-- Tier 2: Bookworm (Featured) -->
+                    <article class="tier-card featured">
+                        <div class="tier-icon" aria-hidden="true">🐛</div>
+                        <h3 class="tier-name">Bookworm</h3>
+                        <p class="tier-discount">10% OFF</p>
+                        <p class="tier-requirement">$4.99/month</p>
+                        <ul class="tier-benefits">
+                            <li>10% off all purchases</li>
+                            <li>Free gift wrapping</li>
+                            <li>Priority event access</li>
+                            <li>Exclusive book previews</li>
+                            <li>Free local delivery</li>
+                        </ul>
+                        <button class="btn btn-primary">Subscribe Now</button>
+                    </article>
+
+                    <!-- Tier 3: Literary Elite -->
+                    <article class="tier-card">
+                        <div class="tier-icon" aria-hidden="true">👑</div>
+                        <h3 class="tier-name">Literary Elite</h3>
+                        <p class="tier-discount">15% OFF</p>
+                        <p class="tier-requirement">$9.99/month</p>
+                        <ul class="tier-benefits">
+                            <li>15% off all purchases</li>
+                            <li>All Bookworm benefits</li>
+                            <li>Signed first editions</li>
+                            <li>Author meet & greets</li>
+                            <li>Personal book curator</li>
+                            <li>Exclusive lounge access</li>
+                        </ul>
+                        <button class="btn btn-accent">Go Elite</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="special-offers" aria-labelledby="offers-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="offers-heading">Current Special Offers</h2>
+                    <p>Limited-time deals you won't want to miss</p>
+                    <div class="section-divider" aria-hidden="true"></div>
+                </header>
+
+                <div class="offers-grid">
+                    <!-- Offer 1 -->
+                    <article class="offer-card">
+                        <div class="offer-image" aria-hidden="true">📚</div>
+                        <div class="offer-content">
+                            <span class="offer-tag">Limited Time</span>
+                            <h3 class="offer-title">Buy 2, Get 1 Free</h3>
+                            <p class="offer-description">Purchase any two books from our fiction collection and get a third book absolutely free!</p>
+                            <div class="offer-code">
+                                <span>Use code:</span> <strong>B2G1FREE</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Offer 2 -->
+                    <article class="offer-card">
+                        <div class="offer-image" aria-hidden="true">🎁</div>
+                        <div class="offer-content">
+                            <span class="offer-tag">This Weekend</span>
+                            <h3 class="offer-title">20% Off Non-Fiction</h3>
+                            <p class="offer-description">This weekend only! Get 20% off our entire non-fiction collection including bestsellers.</p>
+                            <div class="offer-code">
+                                <span>Use code:</span> <strong>NONFIC20</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Offer 3 -->
+                    <article class="offer-card">
+                        <div class="offer-image" aria-hidden="true">✨</div>
+                        <div class="offer-content">
+                            <span class="offer-tag">New Members</span>
+                            <h3 class="offer-title">First Purchase: 25% Off</h3>
+                            <p class="offer-description">New to Book Haven? Get 25% off your entire first order when you join our loyalty program.</p>
+                            <div class="offer-code">
+                                <span>Use code:</span> <strong>WELCOME25</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Offer 4 -->
+                    <article class="offer-card">
+                        <div class="offer-image" aria-hidden="true">📅</div>
+                        <div class="offer-content">
+                            <span class="offer-tag">Monthly Deal</span>
+                            <h3 class="offer-title">Free Shipping Over $35</h3>
+                            <p class="offer-description">Orders over $35 qualify for free standard shipping anywhere in the continental US!</p>
+                            <div class="offer-code">
+                                <span>Applied automatically at checkout</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bulk Discounts Info -->
+        <section class="subscribe-section" aria-labelledby="bulk-heading">
+            <div class="container">
+                <h2 id="bulk-heading">📦 Bulk Order Discounts</h2>
+                <p>Perfect for book clubs, schools, and organizations</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 2rem auto 0; text-align: center;">
+                    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--color-accent);">5+</div>
+                        <div>Books</div>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-top: 0.5rem;">5% OFF</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--color-accent);">10+</div>
+                        <div>Books</div>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-top: 0.5rem;">10% OFF</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--color-accent);">25+</div>
+                        <div>Books</div>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-top: 0.5rem;">15% OFF</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--color-accent);">50+</div>
+                        <div>Books</div>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-top: 0.5rem;">20% OFF</div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.9;">
+                    Contact us at <a href="mailto:bulk@bookhaven.com" style="color: var(--color-accent);">bulk@bookhaven.com</a> for custom quotes on large orders
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" role="dialog" aria-labelledby="cart-title" aria-modal="true">
+        <div class="cart-container">
+            <header class="cart-header">
+                <h2 id="cart-title">Your Cart</h2>
+                <button class="cart-close" onclick="closeCartModal()" aria-label="Close cart">&times;</button>
+            </header>
+            
+            <div class="cart-items">
+                <!-- Cart items will be rendered here via JavaScript -->
+            </div>
+            
+            <footer class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price">$0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+                    <button class="btn btn-primary" onclick="processOrder()">Process Order</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Book Haven</h4>
+                    <p>Your neighborhood destination for literary treasures since 2010. Discover, explore, and get lost in the world of books.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Book Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="discounts.html">Discounts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Reading Lane</li>
+                        <li>Bookville, BK 12345</li>
+                        <li>contact@bookhaven.com</li>
+                        <li>(555) 123-BOOK</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" aria-label="Instagram">i</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">p</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    
+    <!-- Visually Hidden Style for Screen Readers -->
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</body>
+</html>

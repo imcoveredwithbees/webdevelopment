@@ -9,19 +9,16 @@
     
     <title>Book Gallery | Book Haven Bookstore</title>
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Skip Link for Accessibility -->
+    
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <!-- Header -->
     <header>
         <div class="header-container">
             <a href="index.html" class="logo" aria-label="Book Haven Home">
@@ -51,9 +48,8 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main id="main-content">
-        <!-- Page Hero -->
+        
         <section class="hero" style="padding: 3rem 1.5rem;">
             <div class="hero-content">
                 <h1>Book Gallery</h1>
@@ -61,10 +57,9 @@
             </div>
         </section>
 
-        <!-- Gallery Section -->
         <section class="gallery-section" aria-labelledby="gallery-heading">
             <div class="container">
-                <!-- Filter Buttons -->
+               
                 <div class="gallery-filters" role="group" aria-label="Filter books by category">
                     <button class="filter-btn active" data-category="all">All Books</button>
                     <button class="filter-btn" data-category="fiction">Fiction</button>
@@ -76,9 +71,8 @@
 
                 <h2 id="gallery-heading" class="visually-hidden">Book Collection</h2>
 
-                <!-- Gallery Grid -->
                 <div class="gallery-grid">
-                    <!-- Book 1 - Fiction -->
+                   
                     <article class="gallery-item" data-id="gallery-1" data-category="fiction">
                         <img src="images/book-1.jpg" alt="The Midnight Library book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -90,7 +84,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 2 - Non-Fiction -->
+                    
                     <article class="gallery-item" data-id="gallery-2" data-category="non-fiction">
                         <img src="images/book-2.jpg" alt="Atomic Habits book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -102,7 +96,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 3 - Mystery -->
+                   
                     <article class="gallery-item" data-id="gallery-3" data-category="mystery">
                         <img src="images/book-3.jpg" alt="Where the Crawdads Sing book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -114,7 +108,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 4 - Sci-Fi -->
+                    
                     <article class="gallery-item" data-id="gallery-4" data-category="sci-fi">
                         <img src="images/book-4.jpg" alt="Project Hail Mary book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -126,7 +120,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 5 - Romance -->
+                    
                     <article class="gallery-item" data-id="gallery-5" data-category="romance">
                         <img src="images/book-5.jpg" alt="The Love Hypothesis book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -138,7 +132,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 6 - Fiction -->
+                   
                     <article class="gallery-item" data-id="gallery-6" data-category="fiction">
                         <img src="images/book-6.jpg" alt="The Kite Runner book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -150,7 +144,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 7 - Non-Fiction -->
+                    
                     <article class="gallery-item" data-id="gallery-7" data-category="non-fiction">
                         <img src="images/book-7.jpg" alt="Educated book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -162,7 +156,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 8 - Mystery -->
+                   
                     <article class="gallery-item" data-id="gallery-8" data-category="mystery">
                         <img src="images/book-8.jpg" alt="Gone Girl book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -174,7 +168,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 9 - Sci-Fi -->
+                    
                     <article class="gallery-item" data-id="gallery-9" data-category="sci-fi">
                         <img src="images/book-9.jpg" alt="Dune book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -186,7 +180,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 10 - Romance -->
+                    
                     <article class="gallery-item" data-id="gallery-10" data-category="romance">
                         <img src="images/book-10.jpg" alt="Pride and Prejudice book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -198,7 +192,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 11 - Fiction -->
+                    
                     <article class="gallery-item" data-id="gallery-11" data-category="fiction">
                         <img src="images/book-11.jpg" alt="1984 book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -210,7 +204,7 @@
                         </div>
                     </article>
 
-                    <!-- Book 12 - Non-Fiction -->
+                    
                     <article class="gallery-item" data-id="gallery-12" data-category="non-fiction">
                         <img src="images/book-12.jpg" alt="Sapiens book cover" loading="lazy">
                         <div class="gallery-item-info">
@@ -226,7 +220,7 @@
         </section>
     </main>
 
-    <!-- Shopping Cart Modal -->
+    
     <div class="cart-modal" role="dialog" aria-labelledby="cart-title" aria-modal="true">
         <div class="cart-container">
             <header class="cart-header">
@@ -235,7 +229,7 @@
             </header>
             
             <div class="cart-items">
-                <!-- Cart items will be rendered here via JavaScript -->
+                
             </div>
             
             <footer class="cart-footer">
@@ -251,7 +245,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -297,10 +291,10 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+   
     <script src="js/main.js"></script>
     
-    <!-- Visually Hidden Style for Screen Readers -->
+    
     <style>
         .visually-hidden {
             position: absolute;
